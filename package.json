@@ -1,0 +1,49 @@
+{
+  "name": "iteratio-plugin-federation",
+  "version": "1.0.0",
+  "description": "App-to-app federation plugin for Iteratio - enables distributed multi-agent systems",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "iteratio",
+    "iteratio-plugin",
+    "federation",
+    "distributed-systems",
+    "event-bus",
+    "multi-agent",
+    "app-coordination"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "iteratio": "^1.0.0",
+    "zod": "^3.25.76"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "inversify": "^6.2.2",
+    "jsonwebtoken": "^9.0.2",
+    "nats": "^2.15.0",
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.0",
+    "@types/node": "^20.19.41",
+    "@types/ws": "^8.5.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^4.1.6"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
